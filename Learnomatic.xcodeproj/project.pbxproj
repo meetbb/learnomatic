@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6715CF1225AF135D005B7051 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6715CF1125AF135D005B7051 /* AppDelegate.swift */; };
+		6715CF1425AF135D005B7051 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6715CF1325AF135D005B7051 /* SceneDelegate.swift */; };
+		6715CF1625AF135D005B7051 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6715CF1525AF135D005B7051 /* ViewController.swift */; };
+		6715CF1925AF135D005B7051 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6715CF1725AF135D005B7051 /* Main.storyboard */; };
+		6715CF1B25AF135E005B7051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6715CF1A25AF135E005B7051 /* Assets.xcassets */; };
+		6715CF1E25AF135E005B7051 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6715CF1C25AF135E005B7051 /* LaunchScreen.storyboard */; };
+		6715CF2925AF135F005B7051 /* LearnomaticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6715CF2825AF135F005B7051 /* LearnomaticTests.swift */; };
+		6715CF3425AF135F005B7051 /* LearnomaticUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6715CF3325AF135F005B7051 /* LearnomaticUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6715CF2525AF135F005B7051 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6715CF0625AF135D005B7051 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6715CF0D25AF135D005B7051;
+			remoteInfo = Learnomatic;
+		};
+		6715CF3025AF135F005B7051 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6715CF0625AF135D005B7051 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6715CF0D25AF135D005B7051;
+			remoteInfo = Learnomatic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6715CF0E25AF135D005B7051 /* Learnomatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Learnomatic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6715CF1125AF135D005B7051 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6715CF1325AF135D005B7051 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6715CF1525AF135D005B7051 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6715CF1825AF135D005B7051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6715CF1A25AF135E005B7051 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6715CF1D25AF135E005B7051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6715CF1F25AF135E005B7051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6715CF2425AF135F005B7051 /* LearnomaticTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnomaticTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6715CF2825AF135F005B7051 /* LearnomaticTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnomaticTests.swift; sourceTree = "<group>"; };
+		6715CF2A25AF135F005B7051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6715CF2F25AF135F005B7051 /* LearnomaticUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnomaticUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6715CF3325AF135F005B7051 /* LearnomaticUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnomaticUITests.swift; sourceTree = "<group>"; };
+		6715CF3525AF135F005B7051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6715CF0B25AF135D005B7051 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6715CF2125AF135F005B7051 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6715CF2C25AF135F005B7051 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6715CF0525AF135D005B7051 = {
+			isa = PBXGroup;
+			children = (
+				6715CF1025AF135D005B7051 /* Learnomatic */,
+				6715CF2725AF135F005B7051 /* LearnomaticTests */,
+				6715CF3225AF135F005B7051 /* LearnomaticUITests */,
+				6715CF0F25AF135D005B7051 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6715CF0F25AF135D005B7051 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6715CF0E25AF135D005B7051 /* Learnomatic.app */,
+				6715CF2425AF135F005B7051 /* LearnomaticTests.xctest */,
+				6715CF2F25AF135F005B7051 /* LearnomaticUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6715CF1025AF135D005B7051 /* Learnomatic */ = {
+			isa = PBXGroup;
+			children = (
+				6715CF1125AF135D005B7051 /* AppDelegate.swift */,
+				6715CF1325AF135D005B7051 /* SceneDelegate.swift */,
+				6715CF1525AF135D005B7051 /* ViewController.swift */,
+				6715CF1725AF135D005B7051 /* Main.storyboard */,
+				6715CF1A25AF135E005B7051 /* Assets.xcassets */,
+				6715CF1C25AF135E005B7051 /* LaunchScreen.storyboard */,
+				6715CF1F25AF135E005B7051 /* Info.plist */,
+			);
+			path = Learnomatic;
+			sourceTree = "<group>";
+		};
+		6715CF2725AF135F005B7051 /* LearnomaticTests */ = {
+			isa = PBXGroup;
+			children = (
+				6715CF2825AF135F005B7051 /* LearnomaticTests.swift */,
+				6715CF2A25AF135F005B7051 /* Info.plist */,
+			);
+			path = LearnomaticTests;
+			sourceTree = "<group>";
+		};
+		6715CF3225AF135F005B7051 /* LearnomaticUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6715CF3325AF135F005B7051 /* LearnomaticUITests.swift */,
+				6715CF3525AF135F005B7051 /* Info.plist */,
+			);
+			path = LearnomaticUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6715CF0D25AF135D005B7051 /* Learnomatic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6715CF3825AF135F005B7051 /* Build configuration list for PBXNativeTarget "Learnomatic" */;
+			buildPhases = (
+				6715CF0A25AF135D005B7051 /* Sources */,
+				6715CF0B25AF135D005B7051 /* Frameworks */,
+				6715CF0C25AF135D005B7051 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Learnomatic;
+			productName = Learnomatic;
+			productReference = 6715CF0E25AF135D005B7051 /* Learnomatic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6715CF2325AF135F005B7051 /* LearnomaticTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6715CF3B25AF135F005B7051 /* Build configuration list for PBXNativeTarget "LearnomaticTests" */;
+			buildPhases = (
+				6715CF2025AF135F005B7051 /* Sources */,
+				6715CF2125AF135F005B7051 /* Frameworks */,
+				6715CF2225AF135F005B7051 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6715CF2625AF135F005B7051 /* PBXTargetDependency */,
+			);
+			name = LearnomaticTests;
+			productName = LearnomaticTests;
+			productReference = 6715CF2425AF135F005B7051 /* LearnomaticTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6715CF2E25AF135F005B7051 /* LearnomaticUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6715CF3E25AF135F005B7051 /* Build configuration list for PBXNativeTarget "LearnomaticUITests" */;
+			buildPhases = (
+				6715CF2B25AF135F005B7051 /* Sources */,
+				6715CF2C25AF135F005B7051 /* Frameworks */,
+				6715CF2D25AF135F005B7051 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6715CF3125AF135F005B7051 /* PBXTargetDependency */,
+			);
+			name = LearnomaticUITests;
+			productName = LearnomaticUITests;
+			productReference = 6715CF2F25AF135F005B7051 /* LearnomaticUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6715CF0625AF135D005B7051 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Logiciél";
+				TargetAttributes = {
+					6715CF0D25AF135D005B7051 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					6715CF2325AF135F005B7051 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 6715CF0D25AF135D005B7051;
+					};
+					6715CF2E25AF135F005B7051 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 6715CF0D25AF135D005B7051;
+					};
+				};
+			};
+			buildConfigurationList = 6715CF0925AF135D005B7051 /* Build configuration list for PBXProject "Learnomatic" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6715CF0525AF135D005B7051;
+			productRefGroup = 6715CF0F25AF135D005B7051 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6715CF0D25AF135D005B7051 /* Learnomatic */,
+				6715CF2325AF135F005B7051 /* LearnomaticTests */,
+				6715CF2E25AF135F005B7051 /* LearnomaticUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6715CF0C25AF135D005B7051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6715CF1E25AF135E005B7051 /* LaunchScreen.storyboard in Resources */,
+				6715CF1B25AF135E005B7051 /* Assets.xcassets in Resources */,
+				6715CF1925AF135D005B7051 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6715CF2225AF135F005B7051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6715CF2D25AF135F005B7051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6715CF0A25AF135D005B7051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6715CF1625AF135D005B7051 /* ViewController.swift in Sources */,
+				6715CF1225AF135D005B7051 /* AppDelegate.swift in Sources */,
+				6715CF1425AF135D005B7051 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6715CF2025AF135F005B7051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6715CF2925AF135F005B7051 /* LearnomaticTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6715CF2B25AF135F005B7051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6715CF3425AF135F005B7051 /* LearnomaticUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6715CF2625AF135F005B7051 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6715CF0D25AF135D005B7051 /* Learnomatic */;
+			targetProxy = 6715CF2525AF135F005B7051 /* PBXContainerItemProxy */;
+		};
+		6715CF3125AF135F005B7051 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6715CF0D25AF135D005B7051 /* Learnomatic */;
+			targetProxy = 6715CF3025AF135F005B7051 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6715CF1725AF135D005B7051 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6715CF1825AF135D005B7051 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6715CF1C25AF135E005B7051 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6715CF1D25AF135E005B7051 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6715CF3625AF135F005B7051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6715CF3725AF135F005B7051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6715CF3925AF135F005B7051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GR8F8KEA7;
+				INFOPLIST_FILE = Learnomatic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mr.Learnomatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6715CF3A25AF135F005B7051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GR8F8KEA7;
+				INFOPLIST_FILE = Learnomatic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mr.Learnomatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6715CF3C25AF135F005B7051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GR8F8KEA7;
+				INFOPLIST_FILE = LearnomaticTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mr.LearnomaticTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Learnomatic.app/Learnomatic";
+			};
+			name = Debug;
+		};
+		6715CF3D25AF135F005B7051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GR8F8KEA7;
+				INFOPLIST_FILE = LearnomaticTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mr.LearnomaticTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Learnomatic.app/Learnomatic";
+			};
+			name = Release;
+		};
+		6715CF3F25AF135F005B7051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GR8F8KEA7;
+				INFOPLIST_FILE = LearnomaticUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mr.LearnomaticUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Learnomatic;
+			};
+			name = Debug;
+		};
+		6715CF4025AF135F005B7051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GR8F8KEA7;
+				INFOPLIST_FILE = LearnomaticUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mr.LearnomaticUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Learnomatic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6715CF0925AF135D005B7051 /* Build configuration list for PBXProject "Learnomatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6715CF3625AF135F005B7051 /* Debug */,
+				6715CF3725AF135F005B7051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6715CF3825AF135F005B7051 /* Build configuration list for PBXNativeTarget "Learnomatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6715CF3925AF135F005B7051 /* Debug */,
+				6715CF3A25AF135F005B7051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6715CF3B25AF135F005B7051 /* Build configuration list for PBXNativeTarget "LearnomaticTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6715CF3C25AF135F005B7051 /* Debug */,
+				6715CF3D25AF135F005B7051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6715CF3E25AF135F005B7051 /* Build configuration list for PBXNativeTarget "LearnomaticUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6715CF3F25AF135F005B7051 /* Debug */,
+				6715CF4025AF135F005B7051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6715CF0625AF135D005B7051 /* Project object */;
+}
