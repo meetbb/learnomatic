@@ -108,6 +108,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="8xu-sr-0OL">
+                                <rect key="frame" x="187" y="428" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="IoY-eh-SOm"/>
+                                    <constraint firstAttribute="height" constant="40" id="mo6-HV-KZg"/>
+                                </constraints>
+                            </activityIndicatorView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yM9-Sa-3N7">
                                 <rect key="frame" x="0.0" y="134" width="414" height="679"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -194,17 +201,23 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="8xu-sr-0OL" firstAttribute="centerY" secondItem="TD3-mq-EiH" secondAttribute="centerY" id="8XR-sq-Fbu"/>
                             <constraint firstItem="yM9-Sa-3N7" firstAttribute="bottom" secondItem="vOn-eS-Ruu" secondAttribute="bottom" id="Afz-0y-Qcn"/>
                             <constraint firstItem="p1h-HP-opn" firstAttribute="top" secondItem="vOn-eS-Ruu" secondAttribute="top" constant="25" id="HLq-Oe-jeC"/>
                             <constraint firstItem="p1h-HP-opn" firstAttribute="leading" secondItem="vOn-eS-Ruu" secondAttribute="leading" constant="20" id="Pdq-nF-71J"/>
                             <constraint firstItem="yM9-Sa-3N7" firstAttribute="leading" secondItem="vOn-eS-Ruu" secondAttribute="leading" id="fBo-8w-1hB"/>
                             <constraint firstItem="yM9-Sa-3N7" firstAttribute="top" secondItem="p1h-HP-opn" secondAttribute="bottom" constant="5" id="fS1-5a-4xS"/>
                             <constraint firstItem="vOn-eS-Ruu" firstAttribute="trailing" secondItem="p1h-HP-opn" secondAttribute="trailing" constant="20" id="h2v-93-DoT"/>
+                            <constraint firstItem="8xu-sr-0OL" firstAttribute="centerX" secondItem="TD3-mq-EiH" secondAttribute="centerX" id="hg0-uJ-F7m"/>
                             <constraint firstItem="yM9-Sa-3N7" firstAttribute="trailing" secondItem="vOn-eS-Ruu" secondAttribute="trailing" id="n4R-kU-yRg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vOn-eS-Ruu"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Android" image="androidIcon" landscapeImage="androidIcon" id="n3T-4O-HFt"/>
+                    <connections>
+                        <outlet property="androidTableView" destination="yM9-Sa-3N7" id="wLD-f7-y3L"/>
+                        <outlet property="loadingImage" destination="8xu-sr-0OL" id="ldf-wt-d35"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yLU-IL-mhi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
