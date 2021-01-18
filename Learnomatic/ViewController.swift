@@ -26,16 +26,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func signInWithGoogle(_ sender: GIDSignInButton) {
-//        GIDSignIn.sharedInstance()?.signIn()
-//        showSimpleAlert(userName: "Meet Brahmbhatt")
-//        SCLAlertView().showInfo("Important info", subTitle: "You are great")
-        let appearance = SCLAlertView.SCLAppearance(
-            showCircularIcon: true
-        )
-        let alertView = SCLAlertView(appearance: appearance)
-        let alertViewIcon = UIImage(named: "iOSIcon") //Replace the IconImage text with the image name
-//        alertView.showInfo("Custom icon", subTitle: "This is a nice alert with a custom icon you choose", circleIconImage: alertViewIcon)
-        alertView.showSuccess("Success", subTitle: "The order is processed.", circleIconImage: alertViewIcon)
+//        GIDSignIn.sharedInstance()?.signIn()    
+        AlertUtils.showSuccessAlert(message: "Welcome Meet Brahmbhatt, to these exciting journey of learning new technology.")
     }
 }
 
@@ -54,6 +46,8 @@ extension ViewController: GIDSignInDelegate {
         let userName: String = user.profile.name
         showSimpleAlert(userName: userName)
     }
+    
+    
     
     func showSimpleAlert(userName: String) {
         let alert = UIAlertController(title: "Learnomatic", message: "Welcome, \(String(describing: userName)) to these exciting journey of learning new technology.", preferredStyle: UIAlertController.Style.alert)

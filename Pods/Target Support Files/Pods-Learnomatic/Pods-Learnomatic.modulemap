@@ -1,0 +1,6 @@
+module Pods_Learnomatic {
+  umbrella header "Pods-Learnomatic-umbrella.h"
+
+  export *
+  module * { export * }
+}
