@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import GoogleSignIn
+import SCLAlertView
 
 class ViewController: UIViewController {
 
@@ -26,7 +27,15 @@ class ViewController: UIViewController {
     
     @IBAction func signInWithGoogle(_ sender: GIDSignInButton) {
 //        GIDSignIn.sharedInstance()?.signIn()
-        showSimpleAlert(userName: "Meet Brahmbhatt")
+//        showSimpleAlert(userName: "Meet Brahmbhatt")
+//        SCLAlertView().showInfo("Important info", subTitle: "You are great")
+        let appearance = SCLAlertView.SCLAppearance(
+            showCircularIcon: true
+        )
+        let alertView = SCLAlertView(appearance: appearance)
+        let alertViewIcon = UIImage(named: "iOSIcon") //Replace the IconImage text with the image name
+//        alertView.showInfo("Custom icon", subTitle: "This is a nice alert with a custom icon you choose", circleIconImage: alertViewIcon)
+        alertView.showSuccess("Success", subTitle: "The order is processed.", circleIconImage: alertViewIcon)
     }
 }
 

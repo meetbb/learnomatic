@@ -108,14 +108,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="8xu-sr-0OL">
-                                <rect key="frame" x="187" y="428" width="40" height="40"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="8xu-sr-0OL">
+                                <rect key="frame" x="177" y="418" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="IoY-eh-SOm"/>
-                                    <constraint firstAttribute="height" constant="40" id="mo6-HV-KZg"/>
+                                    <constraint firstAttribute="width" constant="60" id="IoY-eh-SOm"/>
+                                    <constraint firstAttribute="height" constant="60" id="mo6-HV-KZg"/>
                                 </constraints>
                             </activityIndicatorView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yM9-Sa-3N7">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yM9-Sa-3N7">
                                 <rect key="frame" x="0.0" y="134" width="414" height="679"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -231,16 +231,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RiL-iX-q1q">
-                                <rect key="frame" x="20" y="69" width="374" height="45"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="iw6-Y8-bzB">
+                                <rect key="frame" x="177" y="418" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="TKk-3t-WWW"/>
+                                    <constraint firstAttribute="height" constant="60" id="KM3-uW-y7V"/>
+                                    <constraint firstAttribute="width" constant="60" id="dZ6-AW-v94"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="50"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="nEn-2v-7UU">
+                            </activityIndicatorView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="nEn-2v-7UU">
                                 <rect key="frame" x="0.0" y="119" width="414" height="694"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -314,6 +312,15 @@
                                     <outlet property="delegate" destination="Ykc-NT-iTO" id="Hq6-op-fwP"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RiL-iX-q1q">
+                                <rect key="frame" x="20" y="69" width="374" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="TKk-3t-WWW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -324,6 +331,8 @@
                             <constraint firstItem="nEn-2v-7UU" firstAttribute="trailing" secondItem="3T0-i7-azq" secondAttribute="trailing" id="PWX-MZ-GVq"/>
                             <constraint firstItem="nEn-2v-7UU" firstAttribute="bottom" secondItem="3T0-i7-azq" secondAttribute="bottom" id="Qqg-ZJ-6Ar"/>
                             <constraint firstItem="RiL-iX-q1q" firstAttribute="leading" secondItem="3T0-i7-azq" secondAttribute="leading" constant="20" id="WuS-O1-Q7E"/>
+                            <constraint firstItem="iw6-Y8-bzB" firstAttribute="centerX" secondItem="B9q-hf-IkD" secondAttribute="centerX" id="Yz2-N4-SKS"/>
+                            <constraint firstItem="iw6-Y8-bzB" firstAttribute="centerY" secondItem="B9q-hf-IkD" secondAttribute="centerY" id="nTe-Eh-V5K"/>
                             <constraint firstItem="nEn-2v-7UU" firstAttribute="leading" secondItem="3T0-i7-azq" secondAttribute="leading" id="qQW-gh-dSw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3T0-i7-azq"/>
@@ -331,6 +340,7 @@
                     <tabBarItem key="tabBarItem" title="iOS" image="iOSIcon" landscapeImage="iOSIcon" id="jng-aW-Ko3"/>
                     <connections>
                         <outlet property="iOSTableView" destination="nEn-2v-7UU" id="Qr7-rA-MPp"/>
+                        <outlet property="loadingImage" destination="iw6-Y8-bzB" id="lal-t8-Tzr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ECY-lP-nKJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -23,12 +23,6 @@ class AndroidHomeViewController: UIViewController {
         getAndroidCategories()
     }
     
-    func initLoadingImage() {
-//        self.loadingImage = UIActivityIndicatorView(style: .large)
-//        self.loadingImage.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
-        self.loadingImage.hidesWhenStopped = true
-    }
-    
     func getAndroidCategories() {
         self.loadingImage.startAnimating()
         databaseReference.child("AndroidCategories").observe(.childAdded, with: { (snapshot) in

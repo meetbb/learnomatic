@@ -12,17 +12,24 @@ import Firebase
 
 class iOSHomeViewController: UIViewController {
     
+    @IBOutlet weak var loadingImage: UIActivityIndicatorView!
     var ref: DatabaseReference!
     var headerArray = [String]()
     var descArray = [String]()
-    
     @IBOutlet weak var iOSTableView: UITableView!
+    
     override func viewDidLoad() {
         ref = Database.database().reference()
-        fetchiOSData()
     }
     
-    func fetchiOSData() -> Void {
+    override func viewWillAppear(_ animated: Bool) {
+        if headerArray.count == 0 {
+            fetchiOSData()
+        }
+    }
+    
+    func fetchiOSData() {
+        self.loadingImage.startAnimating()
         ref.child("iOSCategories").observe(.childAdded, with: { (snapshot) in
             let value = snapshot.value
             let key = snapshot.key
@@ -30,16 +37,9 @@ class iOSHomeViewController: UIViewController {
                 self.headerArray.append(key)
                 self.descArray.append(actualDesc as! String)
                 self.iOSTableView.reloadData()
+//                self.loadingImage.stopAnimating()
             }
         })
-//        ref.child("iOSCategories").observe(DataEventType, with: <#T##(DataSnapshot) -> Void#>)(of: .value, with: { (snapshot) in
-//          // Get user value
-//          let value = snapshot.value as? NSDictionary
-//            print("Received iOS data is: \(value)")
-//          // ...
-//          }) { (error) in
-//            print(error.localizedDescription)
-//        }
     }
 }
 
