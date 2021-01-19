@@ -260,10 +260,24 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ot6-Ax-2PJ">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Yq-51-91j">
+                                                <rect key="frame" x="177" y="554.66666666666663" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="eov-Iy-MFh"/>
+                                                    <constraint firstAttribute="width" constant="60" id="pMh-KN-hQH"/>
+                                                </constraints>
+                                                <state key="normal" image="loginIcon"/>
+                                                <connections>
+                                                    <action selector="onRegisterBtnClick:" destination="vJr-Cz-79n" eventType="touchUpInside" id="CTw-hR-hhK"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="818" id="NSJ-vH-x9X"/>
                                             <constraint firstAttribute="width" constant="414" id="PL9-EJ-Hgn"/>
+                                            <constraint firstItem="1Yq-51-91j" firstAttribute="centerX" secondItem="Ot6-Ax-2PJ" secondAttribute="centerX" id="yVv-K3-aaH"/>
                                         </constraints>
                                     </view>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5GZ-iG-dbm" customClass="FormTextField" customModule="Learnomatic" customModuleProvider="target">
@@ -272,7 +286,7 @@
                                             <constraint firstAttribute="height" constant="42" id="g3p-1P-S54"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="name"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7V2-N2-rZl" customClass="FormTextField" customModule="Learnomatic" customModuleProvider="target">
                                         <rect key="frame" x="20" y="206.66666666666666" width="374" height="42"/>
@@ -280,7 +294,31 @@
                                             <constraint firstAttribute="height" constant="42" id="44h-cc-rXN"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="family-name"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Id" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="you-0O-IeX" customClass="FormTextField" customModule="Learnomatic" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="288.66666666666669" width="374" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="G9R-NQ-Sbh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1r1-jZ-c0M" customClass="FormTextField" customModule="Learnomatic" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="370.66666666666669" width="374" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="iqc-Zl-idA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="new-password"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Retype Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7YP-6R-uPp" customClass="FormTextField" customModule="Learnomatic" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="452.66666666666669" width="374" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="23V-z4-uCC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="new-password"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XtA-jS-SLY">
                                         <rect key="frame" x="10" y="40" width="394" height="39.666666666666657"/>
@@ -288,21 +326,40 @@
                                         <color key="textColor" red="0.81960784310000001" green="0.1176470588" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="we7-qr-1QV">
+                                        <rect key="frame" x="187" y="389" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="bHy-PH-qy7"/>
+                                            <constraint firstAttribute="height" constant="40" id="vaJ-Dw-ZHv"/>
+                                        </constraints>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Ot6-Ax-2PJ" firstAttribute="top" secondItem="8gC-UI-hWZ" secondAttribute="top" id="0Ji-b9-nda"/>
+                                    <constraint firstItem="you-0O-IeX" firstAttribute="leading" secondItem="8gC-UI-hWZ" secondAttribute="leading" constant="20" id="1Ua-qu-TxC"/>
+                                    <constraint firstItem="we7-qr-1QV" firstAttribute="centerX" secondItem="IsG-G8-wDO" secondAttribute="centerX" id="1Uk-Jw-HWu"/>
                                     <constraint firstItem="Ot6-Ax-2PJ" firstAttribute="centerY" secondItem="8gC-UI-hWZ" secondAttribute="centerY" id="4M2-mO-8eh"/>
                                     <constraint firstItem="Ot6-Ax-2PJ" firstAttribute="bottom" secondItem="8gC-UI-hWZ" secondAttribute="bottom" id="6F7-Fd-iHO"/>
+                                    <constraint firstItem="1Yq-51-91j" firstAttribute="top" secondItem="7YP-6R-uPp" secondAttribute="bottom" constant="60" id="82i-Ut-qUH"/>
                                     <constraint firstItem="XtA-jS-SLY" firstAttribute="leading" secondItem="8gC-UI-hWZ" secondAttribute="leading" constant="10" id="AaX-wn-fzE"/>
+                                    <constraint firstItem="1r1-jZ-c0M" firstAttribute="leading" secondItem="8gC-UI-hWZ" secondAttribute="leading" constant="20" id="DZj-uq-1kt"/>
+                                    <constraint firstItem="8gC-UI-hWZ" firstAttribute="trailing" secondItem="7YP-6R-uPp" secondAttribute="trailing" constant="20" id="GJa-Pn-vlY"/>
                                     <constraint firstItem="Ot6-Ax-2PJ" firstAttribute="width" secondItem="eiL-Cy-Nsd" secondAttribute="width" id="IAd-LJ-33b"/>
+                                    <constraint firstItem="8gC-UI-hWZ" firstAttribute="trailing" secondItem="you-0O-IeX" secondAttribute="trailing" constant="20" id="M6n-Du-H1Q"/>
                                     <constraint firstItem="8gC-UI-hWZ" firstAttribute="trailing" secondItem="7V2-N2-rZl" secondAttribute="trailing" constant="20" id="OX5-79-OwT"/>
                                     <constraint firstItem="8gC-UI-hWZ" firstAttribute="trailing" secondItem="XtA-jS-SLY" secondAttribute="trailing" constant="10" id="PCv-vS-max"/>
                                     <constraint firstItem="7V2-N2-rZl" firstAttribute="top" secondItem="5GZ-iG-dbm" secondAttribute="bottom" constant="40" id="R9K-4T-iIX"/>
+                                    <constraint firstItem="you-0O-IeX" firstAttribute="top" secondItem="7V2-N2-rZl" secondAttribute="bottom" constant="40" id="bWl-VN-q7i"/>
                                     <constraint firstItem="XtA-jS-SLY" firstAttribute="top" secondItem="8gC-UI-hWZ" secondAttribute="top" constant="40" id="dTe-HS-8JE"/>
+                                    <constraint firstItem="8gC-UI-hWZ" firstAttribute="trailing" secondItem="1r1-jZ-c0M" secondAttribute="trailing" constant="20" id="e3l-cj-iJt"/>
+                                    <constraint firstItem="7YP-6R-uPp" firstAttribute="leading" secondItem="8gC-UI-hWZ" secondAttribute="leading" constant="20" id="go5-ok-NBY"/>
                                     <constraint firstItem="Ot6-Ax-2PJ" firstAttribute="leading" secondItem="8gC-UI-hWZ" secondAttribute="leading" id="huD-qC-K3I"/>
                                     <constraint firstItem="Ot6-Ax-2PJ" firstAttribute="trailing" secondItem="8gC-UI-hWZ" secondAttribute="trailing" id="i34-X0-oqA"/>
+                                    <constraint firstItem="7YP-6R-uPp" firstAttribute="top" secondItem="1r1-jZ-c0M" secondAttribute="bottom" constant="40" id="kbd-eG-nCM"/>
+                                    <constraint firstItem="we7-qr-1QV" firstAttribute="centerY" secondItem="IsG-G8-wDO" secondAttribute="centerY" id="p1b-Ts-PQC"/>
                                     <constraint firstItem="5GZ-iG-dbm" firstAttribute="leading" secondItem="8gC-UI-hWZ" secondAttribute="leading" constant="20" id="pzT-iW-5ar"/>
                                     <constraint firstItem="7V2-N2-rZl" firstAttribute="leading" secondItem="8gC-UI-hWZ" secondAttribute="leading" constant="20" id="qBm-rc-RIJ"/>
+                                    <constraint firstItem="1r1-jZ-c0M" firstAttribute="top" secondItem="you-0O-IeX" secondAttribute="bottom" constant="40" id="sCC-kf-L9n"/>
                                     <constraint firstItem="5GZ-iG-dbm" firstAttribute="top" secondItem="XtA-jS-SLY" secondAttribute="bottom" constant="45" id="u4k-pX-iFr"/>
                                     <constraint firstItem="8gC-UI-hWZ" firstAttribute="trailing" secondItem="5GZ-iG-dbm" secondAttribute="trailing" constant="20" id="vgE-lx-2i6"/>
                                 </constraints>
@@ -321,8 +378,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="IuS-ly-44y"/>
                     <connections>
+                        <outlet property="emailAddressTextField" destination="you-0O-IeX" id="R4T-uO-hpm"/>
                         <outlet property="firstNameTextField" destination="5GZ-iG-dbm" id="ViO-C9-MU7"/>
                         <outlet property="lastNameTextField" destination="7V2-N2-rZl" id="geD-jz-nKw"/>
+                        <outlet property="loadingImage" destination="we7-qr-1QV" id="PXF-t5-w4Y"/>
+                        <outlet property="passwordTextField" destination="1r1-jZ-c0M" id="i6T-a7-SK2"/>
+                        <outlet property="retypePasswordTextField" destination="7YP-6R-uPp" id="uoD-Qk-a4h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i75-Gr-tdc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
