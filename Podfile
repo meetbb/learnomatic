@@ -6,5 +6,6 @@ target 'Learnomatic' do
  pod 'GoogleSignIn'
  pod 'Firebase/Analytics'
  pod 'Firebase/Database'
+ pod 'Firebase/Messaging'
  pod 'SCLAlertView'
 end

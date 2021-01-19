@@ -15,11 +15,13 @@
 		6715CF1E25AF135E005B7051 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6715CF1C25AF135E005B7051 /* LaunchScreen.storyboard */; };
 		6715CF2925AF135F005B7051 /* LearnomaticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6715CF2825AF135F005B7051 /* LearnomaticTests.swift */; };
 		6715CF3425AF135F005B7051 /* LearnomaticUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6715CF3325AF135F005B7051 /* LearnomaticUITests.swift */; };
+		672E3BF225B731FC0090863D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E3BF125B731FC0090863D /* LoginController.swift */; };
 		6738F7E925B5DA60006DCA2D /* AlertUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6738F7E825B5DA60006DCA2D /* AlertUtils.swift */; };
 		673AC58325B1CA250085E977 /* iOSHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673AC58225B1CA250085E977 /* iOSHomeViewController.swift */; };
 		673AC58625B1CA4B0085E977 /* AndroidHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673AC58525B1CA4B0085E977 /* AndroidHomeViewController.swift */; };
 		673AC58925B1CAB50085E977 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673AC58825B1CAB50085E977 /* ProfileViewController.swift */; };
 		6744B6BF25AF3A3400556BB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6744B6BE25AF3A3400556BB7 /* GoogleService-Info.plist */; };
+		67C9A7D725B73FC500F8DA15 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C9A7D625B73FC500F8DA15 /* SignUpViewController.swift */; };
 		BFE1787BAC00D15E694630F2 /* libPods-Learnomatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCCEF6AEAD5A768ECD63514 /* libPods-Learnomatic.a */; };
 /* End PBXBuildFile section */
 
@@ -57,11 +59,13 @@
 		6715CF2F25AF135F005B7051 /* LearnomaticUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnomaticUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6715CF3325AF135F005B7051 /* LearnomaticUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnomaticUITests.swift; sourceTree = "<group>"; };
 		6715CF3525AF135F005B7051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		672E3BF125B731FC0090863D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		6738F7E825B5DA60006DCA2D /* AlertUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUtils.swift; sourceTree = "<group>"; };
 		673AC58225B1CA250085E977 /* iOSHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSHomeViewController.swift; sourceTree = "<group>"; };
 		673AC58525B1CA4B0085E977 /* AndroidHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidHomeViewController.swift; sourceTree = "<group>"; };
 		673AC58825B1CAB50085E977 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		6744B6BE25AF3A3400556BB7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		67C9A7D625B73FC500F8DA15 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		86EB95F9ED16E81E7DE2F553 /* Pods-Learnomatic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learnomatic.debug.xcconfig"; path = "Target Support Files/Pods-Learnomatic/Pods-Learnomatic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +129,7 @@
 		6715CF1025AF135D005B7051 /* Learnomatic */ = {
 			isa = PBXGroup;
 			children = (
+				672E3BF025B731DA0090863D /* Login */,
 				6738F7E725B5DA3D006DCA2D /* utilities */,
 				673AC58725B1CA9F0085E977 /* Profile */,
 				673AC58425B1CA340085E977 /* Android */,
@@ -157,6 +162,15 @@
 				6715CF3525AF135F005B7051 /* Info.plist */,
 			);
 			path = LearnomaticUITests;
+			sourceTree = "<group>";
+		};
+		672E3BF025B731DA0090863D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				672E3BF125B731FC0090863D /* LoginController.swift */,
+				67C9A7D625B73FC500F8DA15 /* SignUpViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		6738F7E725B5DA3D006DCA2D /* utilities */ = {
@@ -380,6 +394,8 @@
 				6715CF1225AF135D005B7051 /* AppDelegate.swift in Sources */,
 				673AC58925B1CAB50085E977 /* ProfileViewController.swift in Sources */,
 				6738F7E925B5DA60006DCA2D /* AlertUtils.swift in Sources */,
+				672E3BF225B731FC0090863D /* LoginController.swift in Sources */,
+				67C9A7D725B73FC500F8DA15 /* SignUpViewController.swift in Sources */,
 				6715CF1425AF135D005B7051 /* SceneDelegate.swift in Sources */,
 				673AC58625B1CA4B0085E977 /* AndroidHomeViewController.swift in Sources */,
 			);
